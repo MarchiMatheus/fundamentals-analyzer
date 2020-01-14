@@ -1,0 +1,35 @@
+Lucro Líquido
+
+    FEITO
+    1) pegar o ano e comparar, em valor nominal, se é maior que o ano anterior:
+        se sim: 1 ponto
+        se não: não conta ponto
+            *OBS: se lucro for menor que zero -> não conta ponto também
+    a nota será dada numa razão de pontos por total de comparação (porcentagem)
+    1-10 - 0
+    10-20 - 1
+    20-30 - 2
+    30-40 - 3
+    40-50 - 4
+    50-60 - 5
+    60-70 - 6
+    70-80 - 7
+    80-90 - 8
+    90-100 - 9
+    100 - 10
+
+
+    2) pegar o ano e comparar com o ano anterior em porcentagem
+    ano x: lucro de 120
+    ano x-1: lucro de 100
+    aumento de 20% de lucro ano contra ano -> isso é otimo
+    cada range de % terá uma nota de 0 a 10
+    nota final será a soma das notas das % dividido pelo máximo da nota possível
+    resultando em uma % também
+    definir o range de porcentagem e suas notas
+    
+
+    3) Adicionar uma bonificação por lucro positivo ano contra ano. Zerar bônus quando não der lucro
+
+
+    4) Adicionar uma bonificação por lucro maior ano contra ano. Zerar bônus quando não der lucro

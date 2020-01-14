@@ -1,0 +1,23 @@
+This is a document that has my ideas to implement and the next steps to improve in this program
+
+* Add more fundamentals to the grade composition
+* Create an different grade calculation method: Weighted Average, Custom grade
+* Create README file and instructions to install needed libraries from import
+* Create a configured grade system based in user input information
+* Create a function in each fundamental class that receive a company ticker, information name and period and returns the value
+* To the data that is not in percentage, create a system to compare it's grow over the years. If it has grown (true or false) and
+    one more robust can be calculate the % of growth year to year, give a grade on that percentage and them create an average of all that
+    percentage grades. Can be done in the Net Profit fundamental
+* Implement List Comprehensions
+
+
+Improvements made:
+* Replace words characters with accentuation
+* Add more companies data to the grade historic
+* Create proper documentation
+* Add a search for the year fundamental numbers
+* Configure more grades to small fundamental numbers
+* Make the core calculation engine class
+* Add Net Profit to the grade composition
+* Implement errors (i.e. column not found in the column, file not found, etc) with throw and catch (try except in the calculation API)
+* Add a penalty for less year data. < 5 (7), 5-7 (8), 8-10 (9), >10 (10)
