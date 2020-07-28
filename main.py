@@ -59,6 +59,6 @@ def processAll():
 
 #Execute main function
 if __name__ == '__main__':
-    # company = input("Enter the company ticker to analyze: ")
-    # main(company)
-    processAll()
+    company = input("Enter the company ticker to analyze: ")
+    main(company)
+    #processAll()
