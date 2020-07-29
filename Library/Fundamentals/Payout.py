@@ -2,7 +2,7 @@ class Payout:
     """ Payout class """
     
     
-    def getPayoutGrade(self, matrixObj):
+    def getPayoutGrade(self, matrixObj, year):
         
         """
         Gets the Payout grade
@@ -11,6 +11,7 @@ class Payout:
         ----------
         self : Payout object
         matrixObj : Object of the Matrix class
+        year : Year to calculate the grade
 
         Returns
         -------
@@ -18,7 +19,7 @@ class Payout:
         """
 
         column = matrixObj.getColumnIndex("Payout")
-        row = matrixObj.getPeriodRow("2018")
+        row = matrixObj.getPeriodRow(year)
         payoutValue = matrixObj.getPercentageValue(row, column)
 
         if (payoutValue < 1):

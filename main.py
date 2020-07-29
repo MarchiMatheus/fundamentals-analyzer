@@ -22,10 +22,10 @@ def createResutFile(result):
 
 
 #Main function to execute the program
-def main(company):
+def main(company, year):
 
     #Calculates the average grade
-    averageGrade = Calculation(company).calculateAverageGrade()
+    averageGrade = Calculation(company).calculateAverageGrade(year)
 
     print()
     print(company + ' - Average Grade: %.2f' %averageGrade)
@@ -60,5 +60,6 @@ def processAll():
 #Execute main function
 if __name__ == '__main__':
     company = input("Enter the company ticker to analyze: ")
-    main(company)
+    year = input("Enter the year to analyze: ")
+    main(company, year)
     #processAll()

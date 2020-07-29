@@ -32,7 +32,7 @@ class Calculation:
         self._matrixObj = Matrix(fileFolder + company + ".csv")
 
 
-    def calculateAverageGrade(self):
+    def calculateAverageGrade(self, year):
         
         """
         Calculates the average between the fundamentals:
@@ -46,6 +46,7 @@ class Calculation:
         Parameters
         ----------
         self : Calculation class object
+        year : Year to calculate the grade
 
         Returns
         -------
@@ -56,10 +57,10 @@ class Calculation:
         try:
 
             #Calculate the grades
-            roeGrade = Roe().getROEGrade(self._matrixObj)
-            payoutGrade = Payout().getPayoutGrade(self._matrixObj)
-            netMarginGrade = NetMargin().getNetMarginGrade(self._matrixObj)
-            netProfit = NetProfit().getNetProfitGrade(self._matrixObj)
+            roeGrade = Roe().getROEGrade(self._matrixObj, year)
+            payoutGrade = Payout().getPayoutGrade(self._matrixObj, year)
+            netMarginGrade = NetMargin().getNetMarginGrade(self._matrixObj, year)
+            netProfit = NetProfit().getNetProfitGrade(self._matrixObj, year)
             dataQuantity = DataQuantity().getDataQuantityGrade(self._matrixObj)
 
             # print('ROE: ' + str(roeGrade) +

@@ -2,7 +2,7 @@ class NetMargin:
     """ Net Margin class """
     
     
-    def getNetMarginGrade(self, matrixObj):
+    def getNetMarginGrade(self, matrixObj, year):
         
         """
         Gets the Net Margin grade
@@ -11,6 +11,7 @@ class NetMargin:
         ----------
         self : NetMargin object
         matrixObj : Object of the Matrix class
+        year : Year to calculate the grade
 
         Returns
         -------
@@ -18,7 +19,7 @@ class NetMargin:
         """
 
         column = matrixObj.getColumnIndex("Mrg. Liq.")
-        row = matrixObj.getPeriodRow("2018")
+        row = matrixObj.getPeriodRow(year)
         netMarginValue = matrixObj.getPercentageValue(row, column)
 
         if (netMarginValue <=4):

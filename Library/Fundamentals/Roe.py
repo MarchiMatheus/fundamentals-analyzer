@@ -2,7 +2,7 @@ class Roe:
     """ Return on Equity(ROE) class """
     
     
-    def getROEGrade(self, matrixObj):
+    def getROEGrade(self, matrixObj, year):
 
         """
         Gets the Return on Equity grade
@@ -11,6 +11,7 @@ class Roe:
         ----------
         self : ROE object
         matrixObj : Object of the Matrix class
+        year : Year to calculate the grade
 
         Returns
         -------
@@ -18,7 +19,7 @@ class Roe:
         """
 
         column = matrixObj.getColumnIndex("ROE")
-        row = matrixObj.getPeriodRow("2018")
+        row = matrixObj.getPeriodRow(year)
         roeValue = matrixObj.getPercentageValue(row, column)
         
         if (roeValue <=4):

@@ -1,7 +1,7 @@
 class NetProfit:
     """ Net Profit class """
 
-    def getNetProfitGrade(self, matrixObj):
+    def getNetProfitGrade(self, matrixObj, year):
 
         """
         Gets the Net Profit grade
@@ -10,6 +10,7 @@ class NetProfit:
         ----------
         self : NetProfit object
         matrixObj : Object of the Matrix class
+        year : Year to calculate the grade
 
         Returns
         -------
@@ -18,7 +19,7 @@ class NetProfit:
 
         column = matrixObj.getColumnIndex("Lucro Liq.")
         yearRowIndex = 2
-        lastRow = matrixObj.getPeriodRow("2018")
+        lastRow = matrixObj.getPeriodRow(year)
 
         totalOfComparisons = 0
         netProfitBiggerThanPreviousCount = 0

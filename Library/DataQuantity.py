@@ -21,7 +21,8 @@ class DataQuantity:
         int : Data Quantity grade
         """
         
-        quantityOfData = matrixObj.getPeriodRow("2018")
+        lastYear = matrixObj.getValue(-1, 0)
+        quantityOfData = matrixObj.getPeriodRow(str(lastYear))
 
         if (quantityOfData < 5):
             return 7
