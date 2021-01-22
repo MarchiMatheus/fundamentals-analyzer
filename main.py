@@ -36,7 +36,7 @@ def main(company, year):
 
 
 #Process all files in Companies CSV folder and
-def processAll():
+def processAll(year):
     
     fileFolder = "./Companies CSV/"
     allFiles = getAllFiles(fileFolder)
@@ -47,7 +47,7 @@ def processAll():
         
         companyNamePattern = "(.*).csv"
         companyName = re.match(companyNamePattern, company).group(1)
-        averageGrade = Calculation(companyName).calculateAverageGrade()
+        averageGrade = Calculation(companyName).calculateAverageGrade(year)
 
         # print(companyName + ' - Average Grade: %.2f' %averageGrade)
 
@@ -57,9 +57,29 @@ def processAll():
     createResutFile(result)
 
 
+#Show menu
+def showMenu():
+
+    print("Choose an option:\n")
+    print("1 -> One Company")
+    print("2 -> Process all")
+    
+    return input()
+
 #Execute main function
 if __name__ == '__main__':
-    company = input("Enter the company ticker to analyze: ")
-    year = input("Enter the year to analyze: ")
-    main(company, year)
-    #processAll()
+
+    itemChoosed = showMenu()
+
+    if (itemChoosed == str(1)):
+
+        company = input("Enter the company ticker to analyze: ")
+        year = input("Enter the year to analyze: ")
+        main(company, year)
+
+    elif (itemChoosed == str(2)):
+        year = input("Enter the year to analyze: ")
+        processAll(year)
+
+    else:
+        print("Input not valid")

@@ -7,7 +7,7 @@ b3sa, 8.40
 bbas, 6.60
 bbdc, 7.60
 bbse, 6.40
-bidi, 5.20
+bidi, 5.40
 bkbr, 4.80
 bpac, 7.40
 brfs, 3.00
@@ -20,7 +20,7 @@ cnto, 5.60
 crfb, 6.60
 ctnm, 5.80
 ctsa, 7.00
-cvcb, 7.20
+cvcb, 7.40
 egie, 9.20
 elet, 6.80
 embr, 6.80
@@ -39,7 +39,7 @@ itsa, 8.40
 itub, 8.60
 jbss, 4.60
 klbn, 5.40
-krot, 6.80
+krot, -1.00
 lame, 5.00
 lcam, 6.60
 leve, 8.40
@@ -60,7 +60,7 @@ pmam, 2.60
 posi, 2.80
 pssa, 7.80
 ptbl, 6.80
-qual, 8.20
+qual, 8.40
 radl, 6.20
 rapt, 6.40
 rent, 6.80
@@ -81,4 +81,4 @@ usim, 5.40
 vale, 7.80
 vivt, 7.60
 wege, 7.40
-wizs, 9.00
+wizs, 9.20
